@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getAuthor } from "@/lib/authors";
 import { getAllPosts, getPost, getReadingTime } from "@/lib/posts";
+import { site } from "@/lib/site";
 import { getTopic } from "@/lib/topics";
 
 export const alt = "An essay from Meridian";
@@ -114,7 +115,7 @@ export default async function Image({
             color: "#9fb8ae",
           }}
         >
-          <span>meridianjournal.com</span>
+          <span>{new URL(site.url).host}</span>
           <span>Essays on design, technology, and craft</span>
         </div>
       </div>

@@ -132,7 +132,7 @@ export default function Image() {
             color: "#8d8374",
           }}
         >
-          <span>meridianjournal.com</span>
+          <span>{new URL(site.url).host}</span>
           <span>{`Independent since ${site.founded}`}</span>
         </div>
       </div>

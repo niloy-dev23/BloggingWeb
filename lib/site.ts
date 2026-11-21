@@ -1,5 +1,5 @@
 const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://meridianjournal.com"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://meridian-blogweb-sazzad.vercel.app"
 ).replace(/\/+$/, "");
 
 export const site = {

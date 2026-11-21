@@ -28,12 +28,12 @@ npm run lint
 
 | Variable | Purpose | Default |
 | --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Canonical origin used for metadata, JSON-LD, sitemap, robots, and RSS | `https://meridianjournal.com` |
+| `NEXT_PUBLIC_SITE_URL` | Canonical origin used for metadata, canonical URLs, JSON-LD, sitemap, robots, Open Graph tags, and RSS | `https://meridian-blogweb-sazzad.vercel.app` |
 
-Set it in `.env.local` (or your host's environment) before building. It must be the full origin without a path, for example:
+Set it in `.env.local` (or your host's environment) before building. `.env.example` documents the production value. It must be the full origin without a path, for example:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://example.com
+NEXT_PUBLIC_SITE_URL=https://meridian-blogweb-sazzad.vercel.app
 ```
 
 The value is read at build time, so rebuild after changing it.
